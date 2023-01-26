@@ -7,10 +7,10 @@ namespace Summator.UnitTests
         [Test]
         public void Test_Summator_SumTWOPositiveNumbers()
         {
-            var nums = new int[] { 1, 2 };
-            var actual = Summator.Sum(nums);
+            int[] nums = new int[] { 1, 2 };
+            int actual = Summator.Sum(nums);
 
-            var expexted = 3;
+            int expexted = 3;
 
             Assert.AreEqual(actual, expexted);   
         }
@@ -18,10 +18,10 @@ namespace Summator.UnitTests
         [Test]
         public void Test_Summator_SumTWONegativeNumbers()
         {
-            var nums = new int[] { -1, -99 };
-            var actual = Summator.Sum(nums);
+            int[] nums = new int[] { -1, -99 };
+            int actual = Summator.Sum(nums);
 
-            var expexted = -100;
+            int expexted = -100;
 
             Assert.AreEqual(actual, expexted);
         }
@@ -29,10 +29,10 @@ namespace Summator.UnitTests
         [Test]
         public void Test_Summator_OnePositiveNumber()
         {
-            var nums = new int[] { 6 };
-            var actual = Summator.Sum(nums);
+            int[] nums = new int[] { 6 };
+            int actual = Summator.Sum(nums);
 
-            var expexted = 6;
+            int expexted = 6;
 
             Assert.AreEqual(actual, expexted);
         }
