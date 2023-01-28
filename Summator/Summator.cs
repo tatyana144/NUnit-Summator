@@ -12,9 +12,9 @@ namespace Summator
         public static int Sum(int[] arr)
         {
 
-            int sum = arr[0];
+            int sum = 0;
 
-            for (int i = 1; i < arr.Length; i++)
+            for (int i = 0; i < arr.Length; i++)
             {
 
                 sum += arr[i];
@@ -24,17 +24,35 @@ namespace Summator
             return sum;
         }
 
-        // Here is the sample test
-        public static void Test_SumTwoNumbers()
+        public static double Average(double[] arr)
         {
-            if (Sum(new int[] { 1, 3 }) != 3)
+
+            double sum = 0;
+
+            for (int i = 0; i < arr.Length; i++)
             {
-                throw new Exception("1+3 != 3");
+
+                sum += arr[i];
+
             }
-            else
-            {
-                Console.WriteLine( "Test Pass");
-            }
+
+            return sum / arr.Length;
         }
+
+        public static double Multiplication(double[] arr)
+        {
+
+            double mult = 1;
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+
+                mult *= arr[i];
+
+            }
+
+            return mult;
+        }
+
     }
 }
