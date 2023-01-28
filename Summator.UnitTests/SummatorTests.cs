@@ -7,7 +7,7 @@ namespace Summator.UnitTests
         [Test]
         public void Test_Summator_SumTWOPositiveNumbers()
         {
-            int[] nums = new int[] { 1, 2 };
+            int[] nums = { 1, 2 };
             int actual = Summator.Sum(nums);
 
             int expexted = 3;
@@ -18,7 +18,7 @@ namespace Summator.UnitTests
         [Test]
         public void Test_Summator_SumTWONegativeNumbers()
         {
-            int[] nums = new int[] { -1, -99 };
+            int[] nums = { -1, -99 };
             int actual = Summator.Sum(nums);
 
             int expexted = -100;
@@ -29,7 +29,7 @@ namespace Summator.UnitTests
         [Test]
         public void Test_Summator_OnePositiveNumber()
         {
-            int[] nums = new int[] { 6 };
+            int[] nums = { 6 };
             int actual = Summator.Sum(nums);
 
             int expexted = 6;
@@ -40,7 +40,7 @@ namespace Summator.UnitTests
         [Test]
         public void Test_Summator_ZeroMumber()
         {
-            int[] nums = new int[] {};
+            int[] nums = {};
             int actual = Summator.Sum(nums);
 
             int expexted = 0;
@@ -51,7 +51,7 @@ namespace Summator.UnitTests
         [Test]
         public void Test_Summator_OnePositiveOneNegative()
         {
-            int[] nums = new int[] {-2, 5 };
+            int[] nums = {-2, 5 };
             int actual = Summator.Sum(nums);
 
             int expexted = 3;
@@ -62,7 +62,7 @@ namespace Summator.UnitTests
         [Test]
         public void Test_Summator_AverageTwoPositiveNumber()
         {
-            double[] nums = new double[] { 10, 20 };
+            double[] nums = { 10, 20 };
             double actual = Summator.Average(nums);
 
             double expexted = 15;
@@ -73,7 +73,7 @@ namespace Summator.UnitTests
         [Test]
         public void Test_Summator_AverageTwoNumbers()
         {
-            double[] nums = new double[] { 15, 20 };
+            double[] nums = { 15, 20 };
             double actual = Summator.Average(nums);
 
             double expexted = 17.5;
@@ -84,7 +84,7 @@ namespace Summator.UnitTests
         [Test]
         public void Test_Summator_AverageTwoNegativeNumbers()
         {
-            double[] nums = new double[] { -50, -30 };
+            double[] nums = { -50, -30 };
             double actual = Summator.Average(nums);
 
             double expexted = -40;
@@ -95,7 +95,7 @@ namespace Summator.UnitTests
         [Test]
         public void Test_Summator_AverageOnepositiveOneNegative()
         {
-            double[] nums = new double[] { -50, 30 };
+            double[] nums = { -50, 30 };
             double actual = Summator.Average(nums);
 
             double expexted = -10;
@@ -106,7 +106,7 @@ namespace Summator.UnitTests
         [Test]
         public void Test_Summator_MultiplicateTwoPositiveNumbers()
         {
-            double[] nums = new double[] { 10, 10 };
+            double[] nums = { 10, 10 };
             double actual = Summator.Multiplication(nums);
 
             double expexted = 100;
@@ -117,7 +117,7 @@ namespace Summator.UnitTests
         [Test]
         public void Test_Summator_MultiplicateTwoNegativeNumbers()
         {
-            double[] nums = new double[] { -20, -10 };
+            double[] nums = { -20, -10 };
             double actual = Summator.Multiplication(nums);
 
             double expexted = 200;
@@ -128,7 +128,7 @@ namespace Summator.UnitTests
         [Test]
         public void Test_Summator_MultiplicateNegativeAndPositiveNumbers()
         {
-            double[] nums = new double[] { 20, -10 };
+            double[] nums = { 20, -10 };
             double actual = Summator.Multiplication(nums);
 
             double expexted = -200;
