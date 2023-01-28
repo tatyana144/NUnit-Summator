@@ -42,16 +42,40 @@ namespace Summator
         public static double Multiplication(double[] arr)
         {
 
-            double mult = 1;
+            double multiplication = 1;
 
             for (int i = 0; i < arr.Length; i++)
             {
 
-                mult *= arr[i];
+                multiplication *= arr[i];
 
             }
 
-            return mult;
+            return multiplication;
+        }
+
+        public static double Division(double[] arr)
+        {
+
+            double division = 0;
+            double result = 0;
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                division = arr[i];
+
+                if (result == 0)
+                {
+                    result = division;
+                }
+                else
+                {
+                    result /= division;
+                }
+
+            }
+
+            return result;
         }
 
     }
