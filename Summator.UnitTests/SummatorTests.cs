@@ -28,7 +28,7 @@ namespace Summator.UnitTests
         }
 
         [Test]
-        public void Test_Summator_OnePositiveNumber()
+        public void Test_Summator_SumOnePositiveNumber()
         {
             int[] nums = { 6 };
             int expexted = 6;
@@ -39,7 +39,7 @@ namespace Summator.UnitTests
         }
 
         [Test]
-        public void Test_Summator_ZeroMumber()
+        public void Test_Summator_SumZeroMumber()
         {
             int[] nums = {};
             int expexted = 0;
@@ -50,7 +50,7 @@ namespace Summator.UnitTests
         }
 
         [Test]
-        public void Test_Summator_OnePositiveOneNegative()
+        public void Test_Summator_SumOnePositiveOneNegative()
         {
             int[] nums = {-2, 5 };
             int expexted = 3;
@@ -106,7 +106,7 @@ namespace Summator.UnitTests
 
         //AAA Pattern
         [Test]
-        public void Test_Average_ThreePositiveNumbers()
+        public void Test_Summator_AverageThreePositiveNumbers()
         {
 
             //Arrange
