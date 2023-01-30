@@ -197,6 +197,20 @@ namespace Summator.UnitTests
             Assert.AreEqual(expexted, actual);
         }
 
+        [Test]
+        public void AssertionsExample()
+        {
+
+            // assert boolean condition
+            Assert.That(9 == 9);
+
+            Assert.That(9, Is.GreaterThan(6));
+
+            // Range Assetsions
+            double percentage = 99.95;
+            Assert.That(percentage, Is.InRange(80, 100));
+        }
+
 
     }
 }
