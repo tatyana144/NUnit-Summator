@@ -209,6 +209,12 @@ namespace Summator.UnitTests
             // Range Assetsions
             double percentage = 99.95;
             Assert.That(percentage, Is.InRange(80, 100));
+
+            //regex
+            string date = "7/11/2022";
+            Assert.That(date, Does.Match(@"^\d{1,2}/\d{1,2}/\d{4}$"));
+
+            Assert.That(() => "abc"[45], Throws.TypeOf<IndexOutOfRangeException>());
         }
 
 
