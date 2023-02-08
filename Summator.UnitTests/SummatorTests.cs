@@ -217,6 +217,21 @@ namespace Summator.UnitTests
             Assert.That(() => "abc"[45], Throws.TypeOf<IndexOutOfRangeException>());
         }
 
+        [TestCase(new int[] {1,2}, 3)]
+        [TestCase(new int[] { 1 }, 1)]
+        [TestCase(new int[] { -5, -2 }, -7)]
+        [TestCase(new int[] { 10, 0 }, 10)]
+        [TestCase(new int[] { -5, 5 }, 0)]
+        [TestCase(new int[] { -10, 5 }, -5)]
+        public void Test_Summator_SumDDT(int[] values,long expected)
+        {
+            //Act
+            var actual = Summator.Sum(values);
+
+            //Assert
+            Assert.That(actual, Is.EqualTo(expected));
+        }
+
 
     }
 }
